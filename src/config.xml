@@ -13,7 +13,7 @@
     <homepage>https://github.com/Wirecloud/json-editor-widget</homepage>
     <issuetracker>https://github.com/Wirecloud/json-editor-widget/issues</issuetracker>
     <changelog>doc/changelog.md</changelog>
-    <doc>doc/index.md</doc>
+    <doc>doc/userguide.md</doc>
   </details>
   <requirements>
       <feature name="StyledElements"/>
@@ -21,7 +21,7 @@
   <wiring>
     <inputendpoint name="input" type="text" label="Input" description="Data to be edited" friendcode="*"/>
     <inputendpoint name="configure" type="text" label="Configuration" description="Configuration to use in the JSON editor" friendcode="json-editor-config"/>
-    <outputendpoint name="output" type="text" label="Output" description="" friendcode="*"/>
+    <outputendpoint name="output" type="text" label="Output" description="Modified data" friendcode="*"/>
   </wiring>
   <contents src="index.html" useplatformstyle="true"/>
   <rendering height="470px" width="25%"/>

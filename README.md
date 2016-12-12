@@ -1,10 +1,10 @@
-Spy Wiring widget
-======================
+# JSON Editor widget
 
-The Spy Wiring widget is a WireCloud widget that provides an easy way to inspect the data that travels trough the wiring.
+The JSON Editor widget is a WireCloud widget that provides an easy way for you to view, edit, format and validate JSON
+structures.
 
-Build
------
+
+## Build
 
 Be sure to have installed [Node.js](http://node.js) and [Bower](http://bower.io)
 in your system. For example, you can install it on Ubuntu and Debian running the
@@ -37,32 +37,19 @@ grunt
 
 If everything goes well, you will find a wgt file in the `build` folder.
 
-## Settings
 
-- `Recording by default`: Whether the widget starts on recording or playing mode.
+## Documentation
 
-## Wiring
+Documentation about how to use this widget is available on the
+[User Guide](src/doc/userguide.md). Anyway, you can find general information
+about how to use widgets on the
+[WireCloud's User Guide](https://wirecloud.readthedocs.io/en/stable/user_guide/)
+available on Read the Docs.
 
-### Input Endpoints
-
-- `Input`: The data to be analyzed.
-
-### Output Endpoints
-
-- `Output`: The endpoint where the received data will be sent.
-
-## Usage
-
-## Usage
-
-Plug in the output endpoint you want to spy and it will be displayed on the widget.
-If the record mode is activated, data won't be sent forward until the step or run buttons are pressed. While on this mode, data can be edited and the modified data will be sent instead.
-
-The output data will be sent with the type defined by the type selector.
 
 ## Copyright and License
 
-Copyright 2015 CoNWeT Lab., Universidad Politecnica de Madrid
+Copyright 2016 CoNWeT Lab., Universidad Politecnica de Madrid
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
