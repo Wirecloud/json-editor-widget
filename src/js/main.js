@@ -22,7 +22,7 @@
 
     var MP = MashupPlatform;
 
-    var layout, editor, blacklist = [];
+    var layout, editor, readonly = [];
 
     var init = function init() {
         layout = new StyledElements.VerticalLayout();
@@ -80,7 +80,7 @@
     };
 
     var onEditable = function onEditable(node) {
-        if (blacklist.some(equalList.bind(null, node.path))) {
+        if (readonly.some(equalList.bind(null, node.path))) {
             return false;
         }
 
@@ -107,7 +107,7 @@
     };
 
     var configure = function configure(conf) {
-        blacklist = conf.blacklist || [];
+        readonly = conf.readonly || [];
     };
 
     var updateContent = function updateContent(data) {
