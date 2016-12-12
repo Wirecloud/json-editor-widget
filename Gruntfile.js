@@ -40,7 +40,7 @@ module.exports = function (grunt) {
         },
 
         eslint: {
-            operator: {
+            widget: {
                 src: 'src/js/**/*.js',
             },
             grunt: {
@@ -73,7 +73,7 @@ module.exports = function (grunt) {
         },
 
         compress: {
-            operator: {
+            widget: {
                 options: {
                     mode: 'zip',
                     archive: 'dist/<%= metadata.vendor %>_<%= metadata.name %>_<%= metadata.version %>.wgt'
@@ -154,7 +154,7 @@ module.exports = function (grunt) {
         'clean:temp',
         'copy:main',
         'strip_code',
-        'compress:operator'
+        'compress:widget'
     ]);
 
     grunt.registerTask('default', [
