@@ -1,5 +1,5 @@
 {
-  "name": "widget",
+  "name": "jsoneditor",
   "dependencies": {
     "jsoneditor": "5.5.9"
   },
