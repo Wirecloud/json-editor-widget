@@ -1,7 +1,7 @@
 {
   "name": "jsoneditor",
   "dependencies": {
-    "jsoneditor": "5.5.9"
+    "jsoneditor": "5.32.5"
   },
   "exportsOverride": {
     "jsoneditor": {
